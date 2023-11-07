@@ -1,0 +1,52 @@
+/*Start Global Variables*/
+html:has(#toggle-mode:checked) body{
+    --nav-color:#111;
+    --main-color:#C17E1F;
+    --alt-main-color:#c17e1fea;
+    --section-color:#222;
+    --alt-section-color:#252525;
+    --shadow-color:#111;
+    --link-color:#fff;
+     color:white;
+}
+/*End Global Variables*/
+
+/*********Nav-bar || Section*******/
+html:has(#toggle-mode:checked) body .nav-bar .dark,
+html:not(:has(#toggle-mode:checked)) .nav-bar .light{
+    display:none;
+}
+html:has(#toggle-mode:checked) body .nav-bar .light{
+    display:block;
+}
+
+html:has(#toggle-mode:checked) body .nav-bar .alt-nav-links{
+    background-color: var(--section-color);
+    
+}
+html:has(#toggle-mode:checked) body .nav-bar .overlay{
+    background-color: rgba(0,0,0,.8);
+}
+
+
+/*********Home || Section*******/
+html:has(#toggle-mode:checked) body .home .btns .video-btn i{
+    background-color:var(--nav-color);
+}
+html:has(#toggle-mode:checked) body .home .text .btns .video-btn:hover{
+    color:var(--main-color);
+}
+
+
+/*********Chefs || Section*******/
+html:has(#toggle-mode:checked) body .chefs .chef .image::before{
+    background-image: url('../images/altWave.svg');
+}
+
+/*********Contact || Section*******/
+html:has(#toggle-mode:checked) body .contact .info > div{
+    background-color: #000;
+}
+html:has(#toggle-mode:checked) body .contact .info > div .link{
+    color:#fff;
+}
